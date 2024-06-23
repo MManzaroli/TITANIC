@@ -118,8 +118,9 @@ from sklearn.preprocessing import StandardScaler
 
 #my_model = make_pipeline(StandardScaler(), LogisticRegression(C=0.006, penalty="l2", random_state=123))
 my_model = make_pipeline(StandardScaler(), LogisticRegression(C=0.01, class_weight="balanced",
-    solver="liblinear",  penalty="l2", random_state=0))
+    penalty="l2", random_state=0))
 #, max_iter=80
+#solver="liblinear"
 
 
 
